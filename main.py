@@ -123,27 +123,6 @@ def organize_town_festival(driver):
     start_all_festivals = driver.find_element_by_id("start_all_celebrations")
     sleep(randint(1,10))
     start_all_festivals.click()
-
-
-    # town_festival_list = driver.find_elements_by_class_name("culture_overview_wrapper")
-    # towns = town_festival_list.find_elements_by_class_name("celebration")
-
-    # parades_checkboxes = []
-    # for town in towns:
-    #     try:
-    #         if town.find_element_by_class_name("type_party"):
-    #             button_wrapper = town.find_element_by_class_name("button_wrapper")
-    #             parades_checkboxes.append(town.find_element_by_class_name("type_party"))
-    #             if button_wrapper.find_element_by_class_name("disabled"):
-    #                 del(parades_checkboxes[-1])
-    #     except NoSuchElementException as e:
-    #         pass
-    
-    # actions = ActionChains(town_festival_list)
-    # for parade in parades_checkboxes:
-    #     actions = ActionChains(driver)
-    #     actions.move_to_element(parade).perform()
-    #     parade.click()
  
     #Minimize Culture Page:
     minimize_box = driver.find_element_by_xpath("/html/body/div[14]/div[1]/a")
